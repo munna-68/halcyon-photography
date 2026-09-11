@@ -1,10 +1,11 @@
+import { withBase } from "@/lib/withBase";
 /**
  * Aperture Blue client gallery: private delivery is presented as a composed, tangible experience.
  */
 import { useEffect, useState } from "react";
 import { Check, Download, ImagePlus, LockKeyhole, PackageOpen, X } from "lucide-react";
 
-const albumUrl = "/images/halcyon-gallery-album_f740f42e.jpg";
+const albumUrl = withBase("/images/halcyon-gallery-album_f740f42e.jpg");
 
 export type Gallery = { id: string; names: string; event: string; date: string; deliveryAt: number; included: number; coverClass: string };
 

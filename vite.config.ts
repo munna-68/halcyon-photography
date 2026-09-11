@@ -7,6 +7,7 @@ import { defineConfig } from "vite";
 const plugins = [react(), tailwindcss(), jsxLocPlugin()];
 
 export default defineConfig({
+  base: "/halcyon-photography/",
   plugins,
   resolve: {
     alias: {

@@ -1,11 +1,12 @@
+import { withBase } from "@/lib/withBase";
 /** Aperture Blue home: a contact-sheet sequence of image spills, frame codes, and composed calls to action. */
 import { ArrowDownRight, ArrowUpRight, CalendarDays, Image, Sun } from "lucide-react";
 import { Link } from "wouter";
 import { SiteShell } from "@/components/SiteShell";
 
-const heroUrl = "/images/halcyon-hero-outdoor-wedding_5c6c1a70.jpg";
-const portraitUrl = "/images/halcyon-portrait-studio_f4f46fb1.jpg";
-const editorialUrl = "/images/halcyon-editorial-on-location_d3fc4a67.jpg";
+const heroUrl = withBase("/images/halcyon-hero-outdoor-wedding_5c6c1a70.jpg");
+const portraitUrl = withBase("/images/halcyon-portrait-studio_f4f46fb1.jpg");
+const editorialUrl = withBase("/images/halcyon-editorial-on-location_d3fc4a67.jpg");
 
 export default function Home() {
   return <SiteShell><main>

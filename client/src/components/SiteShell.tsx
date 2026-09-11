@@ -1,3 +1,4 @@
+import { withBase } from "@/lib/withBase";
 /**
  * Aperture Blue shell: a calm index rail, ample negative space, and exact Aerial Blue interaction cues.
  */
@@ -5,7 +6,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
-const logoUrl = "/images/halcyon-symbol-mark_2f643a5f.png";
+const logoUrl = withBase("/images/halcyon-symbol-mark_2f643a5f.png");
 
 const navItems = [
   { href: "/services", label: "Services" },

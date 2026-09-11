@@ -1,9 +1,10 @@
+import { withBase } from "@/lib/withBase";
 /** Aperture Blue services: coverage is sequenced like a contact sheet, with facts replacing dashboard chrome. */
 import { ArrowUpRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { SiteShell } from "@/components/SiteShell";
 import { formatPrice, packages } from "@/data/photography";
-const editorialUrl = "/images/halcyon-editorial-on-location_d3fc4a67.jpg";
+const editorialUrl = withBase("/images/halcyon-editorial-on-location_d3fc4a67.jpg");
 
 export default function Services() {
   return <SiteShell><main><section className="px-5 pb-12 pt-16 md:px-9 md:pb-20 md:pt-24"><div className="mx-auto max-w-[1440px]"><div className="frame-rule"><p className="eyebrow text-[#2783a8]">Index / services + pricing</p><div className="mt-3 grid gap-6 lg:grid-cols-[1.1fr_.9fr]"><h1 className="max-w-3xl text-5xl font-extrabold leading-[.92] tracking-[-.085em] md:text-7xl">Coverage with a reason for every minute.</h1><p className="self-end max-w-md text-base leading-7 text-[#142128]/66">Start with the type of experience you want, then see exactly what it includes. A retainer places the date on the calendar; no surprises before that.</p></div></div></div></section>

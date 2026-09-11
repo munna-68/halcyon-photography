@@ -1,8 +1,9 @@
+import { withBase } from "@/lib/withBase";
 /** Aperture Blue about page: studio character shown through a composed visual sequence and usable contact desk. */
 import { useState } from "react";
 import { ArrowUpRight, CheckCircle2, Mail, MapPin } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
-const studioUrl = "/images/halcyon-portrait-studio_f4f46fb1.jpg";
+const studioUrl = withBase("/images/halcyon-portrait-studio_f4f46fb1.jpg");
 export default function About() {
   const [sent, setSent] = useState(false);
   return <SiteShell><main><section className="px-5 pb-12 pt-16 md:px-9 md:pb-20 md:pt-24"><div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[1fr_1fr] lg:items-end"><div className="frame-rule"><p className="eyebrow text-[#2783a8]">Frame / about Halcyon</p><h1 className="mt-3 max-w-2xl text-5xl font-extrabold leading-[.92] tracking-[-.085em] md:text-7xl">Images that know when not to interrupt.</h1></div><p className="max-w-xl text-lg leading-8 text-[#142128]/68">Halcyon is a small photography studio with a low-pressure way of working: prepared enough to be useful, alert enough to catch what cannot be planned.</p></div></section>
